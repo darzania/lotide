@@ -30,13 +30,14 @@ const middle = function(array) {
   }
 
   if (array.length % 2 !== 0) {
-    const middle = Math.floor(array.length / 2);
-    newArray.push(array[middle]);
+    const middleIndex1 = Math.floor(array.length / 2);
+    newArray.push(array[middleIndex1]);
   } else {
-    const middle = (array.length / 2) - 1;
-    const nextMiddle = array.length / 2;
-    newArray.push(array[middle], array[nextMiddle]);
+    const middleIndex1 = (array.length / 2) - 1;
+    const middleIndex2 = array.length / 2;
+    newArray.push(array[middleIndex1], array[middleIndex2]);
   }
+  
 
   return newArray;
 

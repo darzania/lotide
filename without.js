@@ -22,6 +22,7 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+// The without function takes two arrays as arguments, and returns a copy of the first array with any elements present in the second array removed.
 const without = function(source, itemsToRemove) {
   let newArray = [];
 

@@ -1,21 +1,20 @@
-const eqArrays = function(arr1, arr2) {
+const eqArrays = function(arr1, arr2) {  // Function to compare two arrays
 
-  if (arr1.length !== arr2.length) {
+  if (arr1.length !== arr2.length) {  // Checks if array lengths are different
     return false;
   }
 
-  for (let i = 0; i < arr1.length; i++) {
+  for (let i = 0; i < arr1.length; i++) { // Loops through the elements, comparing them
 
     if (arr1[i] !== arr2[i]) {
-
-      return false;
+      return false;  // Return false if the elements don't match
     }
   }
-  return true;
+  return true; // Return true if all the elements match
 };
 
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
+const assertArraysEqual = function(actual, expected) {  // Function prints if two arrays are equal or not
+  if (eqArrays(actual, expected)) {  // Uses eqArrays function to compare arrays and logs the result
     console.log(`✔✔✔  Assertion Passed: Arrays ${actual} and ${expected} are the same.`);
   } else {
     console.log(`❌❌❌ Assertion Failed: Arrays ${actual} !== ${expected} are not the same.`);

@@ -1,27 +1,3 @@
-const eqArrays = function(arr1, arr2) {
-
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-
-    if (arr1[i] !== arr2[i]) {
-
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✔✔✔  Assertion Passed: Arrays ${actual} and ${expected} are the same.`);
-  } else {
-    console.log(`❌❌❌ Assertion Failed: Arrays ${actual} !== ${expected} are not the same.`);
-  }
-};
-
 const letterPositions = function(sentence) {
   const results = {};  // Empty object to store letter position
 
@@ -39,8 +15,4 @@ const letterPositions = function(sentence) {
   return results;  // Return the final object containing letter positions
 };
 
-
-assertArraysEqual(letterPositions("hello").h,[3]);  // Should Fail
-assertArraysEqual(letterPositions("hello").e,[1]);  // Should Pass
-assertArraysEqual(letterPositions("lighthouse").h, [3, 5]);  // Should Pass
-assertArraysEqual(letterPositions("toronto").o, [1, 3, 6]);  // Should Pass
+module.exports = letterPositions;

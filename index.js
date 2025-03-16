@@ -22,21 +22,21 @@ const map = require('./map');
 const flatten = require('./flatten');
 
 module.exports = {
-  assertEqual:  assertEqual,
-  assertArraysEqual: assertArraysEqual,
-  eqArrays:  eqArrays,
-  middle: middle,
-  head:  head,
-  tail:  tail,
-  assertObjectsEqual:  assertObjectsEqual,
-  countLetters:  countLetters,
-  countOnly:  countOnly,
-  eqObjects:  eqObjects,
-  findKey:  findKey,
-  findKeyByValue: findKeyByValue,
-  letterPositions: letterPositions,
-  takeUntil:  takeUntil,
-  without:  without,
-  map:  map,
-  flatten:  flatten
+  assertEqual,
+  assertArraysEqual,
+  eqArrays,
+  middle,
+  head,
+  tail,
+  assertObjectsEqual,
+  countLetters,
+  countOnly,
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  letterPositions,
+  takeUntil,
+  without,
+  map,
+  flatten
 };
